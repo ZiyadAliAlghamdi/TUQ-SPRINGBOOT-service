@@ -27,7 +27,7 @@ public class NewsArticleService {
 
     public void addArticle(NewsArticle newsArticle){
         newsArticle.setPublished(false);
-        newsArticle.setPublishDate(LocalDate.ofEpochDay(-1970));    //default date: 1964-08-10
+        newsArticle.setPublishDate(LocalDate.ofEpochDay(0));    //default date: 1-1-1970
         newsArticleArrayList.add(newsArticle);
     }
 
